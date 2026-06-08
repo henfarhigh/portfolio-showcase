@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Henry Araya.</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">sobre mí</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">experiencia</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contacto</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1>henry araya.</h1>
+        <h2>Gestor Mantenimiento &amp; Deployment / NOC / Ciberseguridad</h2>
+        <div id="menu">
+            <a onclick="showabout()">sobre mí</a>
+            <a onclick="showwork()">experiencia</a>
+            <a onclick="showcontact()">contacto</a>
+        </div>
+        <table>
+            <tr>
+                <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social" href="mailto:bogar1001@gmail.com"><i class="fas fa-envelope"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social" href="https://www.linkedin.com/in/haraya1001" target="_blank"><i class="fab fa-linkedin"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social" href="https://henfarhigh.github.io/henry-araya-portfolio/" target="_blank"><i class="fas fa-globe"></i></a></td>
+                <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social" href="tel:+50663809021"><i class="fas fa-phone"></i></a></td>
+            </tr>
+        </table>
+    </div>
+
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>experiencia.</h1>
+        <section>
+            <h2>Gestor de Mantenimiento y Deployment</h2>
+            <p><strong>BAC Credomatic (Outsourcing CMA) | Enero 2026 – Actualidad</strong><br>
+            Operación, mantenimiento y automatización de sistemas empresariales integrando AS/400 con RPA y Ansible.</p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;AS/400</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Jenkins</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Ansible</div>
+                <div><i class="fas fa-circle"></i>&nbsp;RPA</div>
+                <div><i class="fas fa-circle"></i>&nbsp;ServiceNow</div>
+                <div><i class="fas fa-circle"></i>&nbsp;DataPower</div>
+            </div>
+        </section>
+        <section>
+            <h2>NOC Administrador y Soporte de Aplicaciones</h2>
+            <p><strong>BAC Credomatic (Outsourcing CMA) | Julio 2019 – Diciembre 2025</strong><br>
+            Monitoreo de servicios críticos, respaldos en +20 servidores AS400, coordinación de mantenimientos regionales.</p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;New Relic</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Dynatrace</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Grafana</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Splunk</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CyberArk</div>
+                <div><i class="fas fa-circle"></i>&nbsp;BMC Control-M</div>
+            </div>
+        </section>
+        <section>
+            <h2>Soporte Técnico – AstraZeneca | Sep 2016 – Ago 2019</h2>
+            <p>+500 equipos corporativos, servidores Azure y UPS, gestión de proveedores.</p>
+        </section>
+        <section>
+            <h2>Práctica INA – Municipalidad de Miramar | Jun – Ago 2016</h2>
+            <p>Soporte técnico, registro de usuarios, mantenimiento de equipos.</p>
+        </section>
+    </div>
+
+    <div id="about_container" class="container">
+        <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+        <h1>sobre mí.</h1>
+        <section>
+            <h2>perfil profesional</h2>
+            <p>Especialista en la operación, mantenimiento y automatización de sistemas empresariales, integrando entornos legacy (AS/400 – IBM i) con herramientas modernas como RPA y Ansible, garantizando la continuidad, estabilidad y eficiencia de los servicios tecnológicos.</p>
+            <p>Coordinador de mantenimientos preventivos y correctivos, despliegues en DataPower y Broker, pipelines CI/CD con Jenkins. Experiencia en gestión de bots RPA, automatización con Ansible e integración con ServiceNow. Formación en ciberseguridad, Linux, Python y cloud computing. Español nativo · Inglés B2.</p>
+        </section>
+        <section>
+            <h2>habilidades clave</h2>
+            <p>Ansible · RPA · Jenkins · AS/400 · New Relic · Dynatrace · Splunk · CyberArk · Google Cloud · Azure · Oracle Cloud · Python · Linux · Pentesting · CI/CD · ServiceNow · BMC Control-M</p>
+        </section>
+        <section>
+            <h2>educación</h2>
+            <p><strong>Ingeniería en Ciberseguridad</strong> – Universidad Fidélitas (En curso, 50%)<br>
+            IBM Cybersecurity Analyst Professional · Cisco CCNA I &amp; II · Cisco Enterprise Networking Security &amp; Automation · Linux Fundamentals + Linux 2 · Oracle Cloud Foundations · Scrum Fundamentals · Python 1 &amp; 2 · HP LIFE Data Science / Liderazgo</p>
+        </section>
+    </div>
+
+    <div id="contact_container" class="container">
+        <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+        <h1>contacto.</h1>
+        <section>
+            <h2>escríbeme</h2>
+            <p>
+                <strong><i class="fas fa-phone"></i></strong> +506 6380-9021<br>
+                <strong><i class="fas fa-at"></i></strong> bogar1001@gmail.com<br>
+                <strong><i class="fab fa-linkedin"></i></strong> <a href="https://www.linkedin.com/in/haraya1001" target="_blank" style="color:inherit;">linkedin.com/in/haraya1001</a><br>
+                <strong><i class="fas fa-globe"></i></strong> <a href="https://henfarhigh.github.io/henry-araya-portfolio/" target="_blank" style="color:inherit;">henfarhigh.github.io/henry-araya-portfolio</a>
+            </p>
+            <form>
+                <input type="text" placeholder="nombre" required>
+                <input type="email" placeholder="correo" required><br>
+                <textarea placeholder="mensaje" required rows="5"></textarea><br>
+                <button class="btn_one" type="button" onclick="window.location.href='mailto:bogar1001@gmail.com'">enviar</button>
+            </form>
+        </section>
+    </div>
+
+    <div id="footer">
+        Henry Araya Bogarin &nbsp;|&nbsp; bogar1001@gmail.com
+    </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
